@@ -1,5 +1,6 @@
 window.addEventListener("load", function(){
   $("li").on("click", function(){
-    console.log(this.id);
+    $("li.selected").removeClass("selected");
+    $(this).addClass("selected");
   });
 });
